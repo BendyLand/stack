@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Stack
 {
-    class Stack
+    class Stack<T>
     {
         public Node<T> TopItem
         { get; private set; }
