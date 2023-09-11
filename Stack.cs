@@ -42,7 +42,7 @@ namespace Stack
                 Node<T> itemToRemove = TopItem;
                 TopItem = itemToRemove.NextNode;
                 Size--;
-                Console.WriteLine($"Delivering{itemToRemove.Value}");
+                Console.WriteLine($"Delivering {itemToRemove.Value}");
                 return itemToRemove.Value;
             }
             Console.WriteLine("All out of pizza");
