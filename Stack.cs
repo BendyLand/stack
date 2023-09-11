@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Stack
 {
@@ -15,12 +16,12 @@ namespace Stack
         {
             TopItem = null;
             Size = 0;
-            Limit = limit
+            Limit = limit;
         }
 
         public void Push(T value)
         {
-            if self.HasSpace()
+            if (this.HasSpace())
             {
                 Node<T> item = new Node<T>(value);
                 item.NextNode = TopItem;
@@ -36,7 +37,7 @@ namespace Stack
 
         public T Pop()
         {
-            if not self.IsEmpty()
+            if (!this.IsEmpty())
             {
                 Node<T> itemToRemove = TopItem;
                 TopItem = itemToRemove.NextNode;
@@ -50,7 +51,7 @@ namespace Stack
 
         public T Peek()
         {
-            if not self.IsEmpty()
+            if (!this.IsEmpty())
             {
                 return TopItem.Value;
             }
