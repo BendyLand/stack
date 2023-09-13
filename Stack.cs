@@ -21,7 +21,7 @@ namespace Stack
 
         public void Push(T value)
         {
-            if (this.HasSpace())
+            if (HasSpace())
             {
                 Node<T> item = new Node<T>(value);
                 item.NextNode = TopItem;
@@ -37,7 +37,7 @@ namespace Stack
 
         public T Pop()
         {
-            if (!this.IsEmpty())
+            if (!IsEmpty())
             {
                 Node<T> itemToRemove = TopItem;
                 TopItem = itemToRemove.NextNode;
@@ -51,7 +51,7 @@ namespace Stack
 
         public T Peek()
         {
-            if (!this.IsEmpty())
+            if (!IsEmpty())
             {
                 return TopItem.Value;
             }
