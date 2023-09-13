@@ -1,4 +1,4 @@
-# stacks
+# stack
 
 #### This repository is for files containing implementations of stacks in different languages, and some of their useful methods. 
 
